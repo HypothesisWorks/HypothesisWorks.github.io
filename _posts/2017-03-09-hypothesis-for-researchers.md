@@ -32,7 +32,8 @@ The remainder is divided into several sections:
 * [What is Hypothesis?](#what-is-hypothesis) is a from-scratch introduction to Hypothesis. If you are already familiar with
   property-based testing (e.g. from QuickCheck) you can probably skip this.
 * [How is Hypothesis innovative?](#how-is-hypothesis-innovative) is about the current state of the art of Hypothesis and why
-  it's interesting. If you're already convinced that Hypothesis is innovative you can probably skip this.
+  it's interesting. If you've already read [How Hypothesis Works](http://hypothesis.works/articles/how-hypothesis-works/) this
+  is unlikely to teach you anything new and you can skip it.
 * [What prior art is it based on?](#what-prior-art-is-it-based-on) is a short set of references for some of the inspirations
   for Hypothesis. You probably shouldn't skip this, because it's short and the linked material is all interesting.
 * [What are some interesting research directions?](#what-are-some-interesting-research-directions) explores possible directions
