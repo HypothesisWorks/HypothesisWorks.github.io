@@ -19,7 +19,7 @@ work in this field).
 The short version:
 
 Hypothesis takes an existing effective style of testing (property-based testing) which has proven highly effective in practice
-and makes it accessible to a much larger audience. It does so by combining several previously unconnected ideas from the existing
+and makes it accessible to a much larger audience. It does so by taking several previously unconnected ideas from the existing
 research literature on testing and verification, and combining them to produce a novel implementation that has proven very effective
 in practice.
 
