@@ -27,6 +27,22 @@ The long version is the rest of this article.
 
 <!--more-->
 
+The rest of this document is divided into several sections:
+
+* [What is Hypothesis?](#what-is-hypothesis) is a from-scratch introduction to Hypothesis. If you are already familiar with
+  property-based testing (e.g. from QuickCheck) you can probably skip this.
+* [How is Hypothesis innovative?](#how-is-hypothesis-innovative) is about the current state of the art of Hypothesis and why
+  it's interesting. If you're already convinced that Hypothesis is innovative you can probably skip this.
+* [What prior art is it based on?](#what-prior-art-is-it-based-on) is a short set of references for some of the inspirations
+  for Hypothesis. You probably shouldn't skip this, because it's short and the linked material is all interesting.
+* [What are some interesting research directions?](#what-are-some-interesting-research-directions) explores possible directions
+  I'm looking into for the future of Hypothesis, some of which I would hope to include in any PhD related to it that I worked
+  on. You probably shouldn't skip this if you care about this document at all.
+* [What should you do with this information?](#what-should-you-do-with-this-information) simply closes off the article and
+  winds things down.
+
+So, without further ado, the actual content.
+
 ### What is Hypothesis?
 
 Hypothesis is an implementation of *property-based testing*, an idea that originated with a Haskell library called QuickCheck.
@@ -190,10 +206,9 @@ used directly:
 
 ### What are some interesting research directions?
 
-I have a large number of possible directions that my work on Hypothesis could be taken - far more than I can practically
-work on, so a lot of the most important work I would be doing as part of a PhD is prioritizing and figuring out which ones
-are the most promising.
-
+I have a large number of possible directions that my work on Hypothesis could be taken. Probably a far larger amount than
+I can practically ever work on, so a large part of any PhD would be prioritising.
+ 
 The following are what I think of as the four most interesting directions to go next:
 
 #### More structured byte streams
@@ -208,7 +223,11 @@ a range of possible valid bytes. This gives Conjecture much more fine-grained in
 a number of additional features and abstractions that can be built on top of it.
 
 From this primitive you can then rebuild arbitrary weighted samplers that shrink correctly (using a variation of the
-Alias Method), and arbitrary grammars (probably using Boltzmann Samplers or similar).
+Alias Method), and arbitrary grammars (probably using [Boltzmann Samplers](https://dl.acm.org/citation.cfm?id=1024669)
+ or similar).
+
+This will provide a much more thorough basis for high quality data generation than the current rather ad hoc method
+of specifying byte streams.
 
 #### Glass box testing
 
@@ -237,6 +256,9 @@ practice on the problems I tried it on.
 [Synthesizing Program Input Grammars](https://arxiv.org/abs/1608.01723) promises to lift this restriction by providing
 much better grammar inference in practical scenarios that are quite closely related to this problem domain, so I would
 like to revisit this and see if it can prove useful.
+
+There are likely a number of other ways that the Conjecture engine can probe the state of the system under test
+to determine interesting potential behaviours, especially in combination with glass box testing features.
 
 #### Other testing abstractions
 
