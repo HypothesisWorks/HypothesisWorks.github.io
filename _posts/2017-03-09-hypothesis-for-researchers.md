@@ -174,7 +174,8 @@ Hypothesis is divided into three logically distinct parts:
    in the programming language.
 3. An interface to external test runners that takes tests built on top of the strategy library and runs them using Conjecture
    (in Python this mostly just consists of exposing a function that the test runners can pick up, but in the
-   [Java Prototype](http://github.com/HypothesisWorks/hypothesis-java)
+   [Java Prototype](http://github.com/HypothesisWorks/hypothesis-java) this is more involved and ends up having
+   to interact with some interesting JUnit specific features.
 
 Conjecture is essentially the interesting part of Hypothesis's implementation and is what supports most of its functionality:
 Generation, shrinking, and serialization are all built into the core engine, so implementations of strategies do not require
