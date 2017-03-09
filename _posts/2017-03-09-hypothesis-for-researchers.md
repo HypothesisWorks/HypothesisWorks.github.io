@@ -180,8 +180,11 @@ Hypothesis is divided into three logically distinct parts:
 Conjecture is essentially the interesting part of Hypothesis's implementation and is what supports most of its functionality:
 Generation, shrinking, and serialization are all built into the core engine, so implementations of strategies do not require
 any awareness of these features to be correct. They simply repeatedly ask the Conjecture engine for blocks of bytes, which
-it duly provides, and they return the desired result. I have written previously
-[more details on how Conjecture and Hypothesis relate](http://hypothesis.works/articles/how-hypothesis-works/).
+it duly provides, and they return the desired result.
+
+If you want to know more about this, I have previously written
+[How Hypothesis Works](http://hypothesis.works/articles/how-hypothesis-works/), which provides a bit more detail
+about Conjecture and how Hypothesis is built on top of it.
 
 ### What prior art is it based on?
 
