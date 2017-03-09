@@ -231,8 +231,12 @@ of specifying byte streams.
 
 #### Glass box testing
 
-Currently Conjecture treats the tests it calls as a black box and does not use coverage information. The primary
-reason for this so far has been pragmatics - all of the techniques I've found have worked well when tests are allowed
+Currently Conjecture treats the tests it calls as a black box and does not get much information about what the tests
+it executes are actually doing.
+
+One obvious thing to do which brings in some more ideas from e.g. American Fuzzy Lop is to use more coverage information,
+but so far I haven't had much success with making my prototypes of this idea suitable for real world use. The primary
+reason for this so far has been that all of the techniques I've found have worked well when tests are allowed
 to run for minutes or hours, but the current design focus of Hypothesis assumes tests have seconds to run at most,
 which limits the utility of these methods and means they haven't been a priority so far.
 
