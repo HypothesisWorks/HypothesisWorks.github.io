@@ -27,7 +27,7 @@ The long version is the rest of this article.
 
 <!--more-->
 
-The rest of this document is divided into several sections:
+The remainder is divided into several sections:
 
 * [What is Hypothesis?](#what-is-hypothesis) is a from-scratch introduction to Hypothesis. If you are already familiar with
   property-based testing (e.g. from QuickCheck) you can probably skip this.
