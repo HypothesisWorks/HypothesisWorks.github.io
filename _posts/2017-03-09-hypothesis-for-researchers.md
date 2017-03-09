@@ -221,8 +221,8 @@ The following are what I think of as the four most interesting directions to go 
 
 My current immediate research focus on Hypothesis is to replace the core Conjecture primitive with a more structured one
 that bears a stronger resemblance to its origins in EXPLODE. This is designed to address a number of practical problems
-that Hypothesis users currently experience, but it also opens up a number of other novel abstractions that can be built
-on top of the core engine.
+that Hypothesis users currently experience (mostly performance related), but it also opens up a number of other novel
+abstractions that can be built on top of the core engine.
 
 The idea is to pare down the interface so that when calling in to Conjecture you simply draw a single byte, specifying
 a range of possible valid bytes. This gives Conjecture much more fine-grained information to work with, which opens up
