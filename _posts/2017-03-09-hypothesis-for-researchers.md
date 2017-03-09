@@ -99,10 +99,11 @@ Then on running we would see the following output:
 Hypothesis probably started with a much more complicated example (the test fails for essentially any list with more
 than one element) and then successfully reduced it to the simplest possible example: A list with two distinct elements.
 
-This example is found so quickly and reliably that it doesn't really matter, but another important feature is that
-is that when an example fails it will replay the last failing example immediately rather than having to find it again.
-This is particularly helpful during development, as it means that tests don't stop failing until the bug is fixed and
-that when they fail again they fail quickly.
+Importantly, when the test is rerun, Hypothesis will start from the falsifying example it found last time rather than
+trying to generate and shrink a new one from scratch. In this particular case that doesn't matter very much - the
+example is found very quickly and it always finds the same one - but for more complex and slower tests this is an
+vital part of the development work flow: It means that tests run much faster and don't stop failing until
+the bug is actually fixed.
 
 Tests can also draw more data as they execute:
 
