@@ -254,7 +254,8 @@ toolkit can construct instances of non-primitive data types](
 {% post_url 2016-05-11-generating-the-right-data %}) like our `Repository`
 class.
 
-The next step would be to write a `repositories` strategy for our test:
+If we were to continue with a `repositories` strategy, our test would
+look something like this:
 
 ```python
     @given(repo=repositories(), branch_name=valid_branch_names())
