@@ -17,7 +17,7 @@ It features:
 * An extensive library of data generators and tools for writing your own.
 * Compatible with py.test, unittest, nose and Django testing, and probably many
   others besides.
-* Support for Python 2.7 (including pypy), 3.4 and 3.5. Support for Python 2.6
+* Support for Python 2.7 (including pypy), 3.4 through 3.7. Support for Python 2.6
   is also available as a separate package, see below.
 * Open source under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
 
