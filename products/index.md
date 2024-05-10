@@ -17,7 +17,7 @@ It features:
 * An extensive library of data generators and tools for writing your own.
 * Compatible with py.test, unittest, nose and Django testing, and probably many
   others besides.
-* Supports CPython and PyPy 3.6 and later (older versions are EoL upstream).
+* Supports CPython and PyPy 3.8 and later (older versions are EoL upstream).
 * Open source under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
 
 To use Hypothesis for Python, simply add the *hypothesis* package to your requirements,
